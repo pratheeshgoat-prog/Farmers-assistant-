@@ -1,0 +1,25 @@
+{
+  "register_farmer": {
+    "name": "Demo Farmer",
+    "email": "farmer@example.com",
+    "password": "Farmer123!",
+    "role": "farmer",
+    "location": "Coimbatore"
+  },
+  "register_customer": {
+    "name": "Demo Customer",
+    "email": "customer@example.com",
+    "password": "Customer123!",
+    "role": "customer",
+    "location": "Coimbatore"
+  },
+  "product": {
+    "crop": "Tomato",
+    "quantity_kg": 500,
+    "price_per_kg": 28,
+    "location": "Coimbatore",
+    "latitude": 11.0168,
+    "longitude": 76.9558,
+    "harvest_date": "2026-09-20"
+  }
+}

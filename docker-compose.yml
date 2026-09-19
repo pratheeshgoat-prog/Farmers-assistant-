@@ -1,0 +1,22 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql+psycopg://agri:agri@db:5432/agri
+      SECRET_KEY: replace-this-in-production
+    depends_on:
+      - db
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_DB: agri
+      POSTGRES_USER: agri
+      POSTGRES_PASSWORD: agri
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+volumes:
+  postgres_data:
